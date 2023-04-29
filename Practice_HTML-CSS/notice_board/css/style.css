@@ -1,0 +1,113 @@
+.main-body {
+  min-width: 1000px;
+  min-height: 100vh;
+}
+/* display 속성 */
+.main-body,
+.login-div,
+.join-div {
+  display: flex;
+  flex-direction: column;
+}
+.main-header,
+.input-id,
+.input-pw,
+.input-record,
+.input-email,
+.input-nickname,
+.input-gender,
+.input-tech,
+.input-tech div {
+  display: flex;
+  align-items: center;
+}
+/* // display 속성 */
+.main-header {
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.main-header h1 > a,
+.main-btnGroup a {
+  text-decoration: none;
+  color: black;
+}
+.main-btnGroup,
+.main-btnGroup a {
+  padding: 15px;
+}
+.main-btnGroup button,
+.login-div button,
+.join-div button {
+  border: 0;
+  font: inherit;
+}
+.main-btnGroup button {
+  background-color: white;
+}
+.main-footer {
+  background-color: #ddd;
+  text-align: center;
+}
+.main-footer p {
+  padding: 20px 0;
+  margin: 0;
+}
+.content-div {
+  flex-grow: 1;
+}
+.login-div,
+.join-div {
+  align-items: center;
+  gap: 20px;
+}
+.login-div p,
+.join-div p {
+  color: darkgrey;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.input-id label,
+.input-pw label,
+.input-record label,
+.input-email label,
+.input-nickname label,
+.input-gender label,
+.input-tech label {
+  width: 100px;
+  flex-shrink: 0;
+}
+.input-id,
+.input-pw,
+.input-record,
+.input-email,
+.input-nickname,
+.input-gender,
+.input-tech {
+  width: 50%;
+}
+#record-id,
+.input-tech div > input[type="checkbox"] {
+  margin-right: 10px;
+}
+.input-id input,
+.input-pw input,
+.input-email input,
+.input-nickname input {
+  width: 100%;
+  height: 30px;
+}
+.login-div button,
+.join-div button {
+  border-radius: 4px;
+  color: white;
+}
+.login-div button,
+.join-div button {
+  width: 50%;
+  height: 40px;
+  background-color: rgb(110, 110, 252);
+}
+.input-tech div {
+  flex-wrap: wrap;
+}
