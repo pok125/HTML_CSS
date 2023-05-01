@@ -111,3 +111,9 @@
 .input-tech div {
   flex-wrap: wrap;
 }
+.board-div table {
+  border: 1px solid #ddd;
+}
+.board-div .table-head {
+  background-color: #eee;
+}
