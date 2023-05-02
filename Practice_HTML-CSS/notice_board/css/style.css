@@ -17,7 +17,8 @@
 .input-nickname,
 .input-gender,
 .input-tech,
-.input-tech div {
+.input-tech div,
+.post-head-data {
   display: flex;
   align-items: center;
 }
@@ -27,7 +28,8 @@
   border-bottom: 1px solid #ddd;
 }
 .main-header h1 > a,
-.main-btnGroup a {
+.main-btnGroup a,
+.board-table a {
   text-decoration: none;
   color: black;
 }
@@ -111,9 +113,60 @@
 .input-tech div {
   flex-wrap: wrap;
 }
-.board-div table {
-  border: 1px solid #ddd;
+.board-table {
+  border-top: 2px solid black;
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  height: 100px;
 }
-.board-div .table-head {
+.board-table .table-head {
   background-color: #eee;
+}
+.board-table .table-head th,
+.board-table .table-body td {
+  border-top: 1px solid #ddd;
+}
+.post-contents {
+  padding-left: 20px;
+}
+.post-contents {
+  margin-bottom: 20px;
+}
+.post-head {
+  background-color: #eee;
+  padding: 10px 0 0 10px;
+  margin-bottom: 10px;
+  border-top: 2px solid black;
+}
+.post-div h2,
+.post-head h3,
+.post-contents ul,
+.post-contents ol {
+  margin: 0;
+}
+.post-head-data {
+  gap: 20px;
+}
+.post-head-data p {
+  padding-right: 20px;
+  font-size: 14px;
+}
+.post-head-data :not(:last-child) {
+  border-right: 1px solid rgb(151, 151, 151);
+}
+.post-contents ol,
+.post-contents ul {
+  padding-left: 20px;
+}
+.post-contents li {
+  padding: 5px 0 5px 0;
+}
+.post-contents h4 {
+  margin-bottom: 0;
+}
+.post-contents a {
+  display: inline-block;
+  margin-top: 30px;
 }
