@@ -18,7 +18,8 @@
 .input-gender,
 .input-tech,
 .input-tech div,
-.post-head-data {
+.post-head-data,
+.btn-group {
   display: flex;
   align-items: center;
 }
@@ -29,7 +30,8 @@
 }
 .main-header h1 > a,
 .main-btnGroup a,
-.board-table a {
+.board-table a,
+.btn-group a {
   text-decoration: none;
   color: black;
 }
@@ -39,7 +41,8 @@
 }
 .main-btnGroup button,
 .login-div button,
-.join-div button {
+.join-div button,
+.btn-group button {
   border: 0;
   font: inherit;
 }
@@ -63,7 +66,8 @@
   gap: 20px;
 }
 .login-div p,
-.join-div p {
+.join-div p,
+.writing-div p {
   color: darkgrey;
   margin-top: 0;
   padding: 0;
@@ -113,19 +117,24 @@
 .input-tech div {
   flex-wrap: wrap;
 }
-.board-table {
+.board-table,
+.writing-table {
   border-top: 2px solid black;
-  border-bottom: 1px solid #ddd;
   border-collapse: collapse;
-  text-align: center;
+  border-bottom: 1px solid #ddd;
   width: 100%;
+}
+.board-table {
+  text-align: center;
   height: 100px;
 }
-.board-table .table-head {
+.board-table .table-head,
+.writing-table th {
   background-color: #eee;
 }
 .board-table .table-head th,
-.board-table .table-body td {
+.board-table .table-body td,
+.writing-table td {
   border-top: 1px solid #ddd;
 }
 .post-contents {
@@ -143,7 +152,8 @@
 .post-div h2,
 .post-head h3,
 .post-contents ul,
-.post-contents ol {
+.post-contents ol,
+.writing-div p {
   margin: 0;
 }
 .post-head-data {
@@ -169,4 +179,33 @@
 .post-contents a {
   display: inline-block;
   margin-top: 30px;
+}
+
+.btn-group {
+  justify-content: end;
+  margin-top: 20px;
+  gap: 5px;
+}
+.btn-group a,
+.btn-group button {
+  background-color: #ddd;
+  box-sizing: content-box;
+  padding: 1px 6px 1px 6px;
+  width: 50px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.writing-table textarea {
+  resize: none;
+}
+.writing-table textarea,
+.writing-table input[type="text"] {
+  width: 98%;
+  margin-left: 5px;
+}
+.writing-table textarea {
+  height: 200px;
 }

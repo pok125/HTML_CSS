@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>writing</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="main-body">
+    <header class="main-header">
+      <h1><a href="index.html">HTML/CSS 실습</a></h1>
+      <div class="main-btnGroup">
+        <a href="longin.html">로그인</a>
+        <a href="join.html">회원가입</a>
+        <button type="button">로그아웃</button>
+      </div>
+    </header>
+
+    <div class="content-div">
+      <div class="writing-div">
+        <h2>글쓰기</h2>
+
+        <p>내용을 입력해 주세요</p>
+
+        <table class="writing-table">
+          <tr>
+            <th>카테고리</th>
+            <td>
+              <select name="" id="">
+                <option value="normal">일반</option>
+                <option value="notice">공지사항</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>제목</th>
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+          <tr>
+            <th>내용</th>
+            <td>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>파일첨부</th>
+            <td>
+              <input type="file" />
+            </td>
+          </tr>
+        </table>
+
+        <div class="btn-group">
+          <a href="index.html">목록</a>
+          <button type="reset">초기화</button>
+          <button type="submit">작성</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <p>Copyright 2023. KwangHo All rights reserved.</p>
+    </footer>
+  </body>
+</html>
