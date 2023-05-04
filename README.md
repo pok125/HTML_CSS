@@ -1,2 +1,2 @@
-# Practice
-자유롭게 연습하는 공간입니다.
+# HTML_CSS
+HTML-CSS 작업들 입니다.
